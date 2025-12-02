@@ -1,0 +1,30 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+           "type": "node",
+           "request": "launch",
+           "name": "LOCAL",
+           "cwd": "${workspaceFolder}",
+           "preLaunchTask": "Run Program for Debug",
+           "outFiles": [
+               "${workspaceFolder}/lib/**/*.js"
+           ],
+           "skipFiles": [
+               "<node_internals>/**"
+           ],
+           "console": "integratedTerminal",
+           "program": "${workspaceFolder}/lib/index.js",
+           "args": [],
+           "env": {
+               "GOOGLE_APPLICATION_CREDENTIALS": "${env:SECRETSPATH}/pep-usr-marketing-f22a7cf4d061.json",
+               "WORKING_DIR": "./tmp"
+           }
+       }
+
+    ]
+}

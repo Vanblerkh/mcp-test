@@ -1,0 +1,13 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+           "label": "Run Program for Debug",
+           "type": "npm",
+           "script": "debugbuild",
+           "group": "build",
+           "problemMatcher": []
+       }
+
+	]
+}
