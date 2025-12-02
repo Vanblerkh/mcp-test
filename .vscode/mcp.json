@@ -12,7 +12,8 @@
         "MYSQL_DB": "mcp_test",
         "ALLOW_INSERT_OPERATION": "true",
         "ALLOW_UPDATE_OPERATION": "true",
-        "ALLOW_DELETE_OPERATION": "true"
+        "ALLOW_DELETE_OPERATION": "true",
+        "SCHEMA_DDL_PERMISSIONS": "mcp_test:true"
       }
     }
   },

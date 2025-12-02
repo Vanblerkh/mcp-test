@@ -1,6 +1,7 @@
 import express, { Request, Response } from "express";
 import cors from "cors";
 import contextRoutes from "./routes/contextRoutes";
+import userRoutes from "./routes/userRoutes";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -16,6 +17,7 @@ app.get("/health", (_req: Request, res: Response) => {
 
 // Routes
 app.use(contextRoutes);
+app.use(userRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
