@@ -21,8 +21,10 @@
            "program": "${workspaceFolder}/lib/index.js",
            "args": [],
            "env": {
-               "GOOGLE_APPLICATION_CREDENTIALS": "${env:SECRETSPATH}/pep-usr-marketing-f22a7cf4d061.json",
-               "WORKING_DIR": "./tmp"
+               "WORKING_DIR": "./tmp",
+               "DB_SECRETS_PATH": "${env:SECRETSPATH}/test",
+               "DB_CONNECTION_LIMIT": "10",
+               "PORT": "3000"
            }
        }
 
